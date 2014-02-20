@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+
+	"name": "Search Verbatim (sic)",
+	"description": "Adds &tbs=li:1 to google queries and '+' (%2B) operator to DDG search terms",
+	"version": "0.1",
+
+	"background": {"scripts":["background.js"]},
+
+	"permissions": ["webRequest", "tabs", "webRequestBlocking", "<all_urls>"],
+	"browser_action": {
+		"default_icon": "icons/icon.png",
+		"default_title": "Toggle search verbatim (sic)"
+	}
+}
