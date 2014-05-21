@@ -24,4 +24,4 @@ At no point will the extension ever communicate in any way with any process outs
 https://github.com/stormsaber/sic-extension. Please submit all bug reports in a timely manner so that this extension can be made better.
 
 # Licence
-All code and icons are licenced under the GPLv.2
+All code and icons are licenced under the GPLv2.
