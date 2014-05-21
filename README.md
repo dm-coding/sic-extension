@@ -11,4 +11,4 @@ The extension was designed in Opera and works in both Chrome and Opera desktop e
 https://github.com/stormsaber/sic-extension
 
 # Licence
-All code and icons are licenced under the GPLv.3
+All code and icons are licenced under the GPLv.2
