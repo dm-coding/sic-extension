@@ -2,14 +2,23 @@
 	"manifest_version": 2,
 
 	"name": "Search Verbatim (sic)",
-	"description": "Adds &tbs=li:1 to google queries and '+' (%2B) operator to DDG search terms",
-	"version": "0.1",
+	"description": "Forces Google to use Verbatim searching and adds the plus ('+') sign to all search terms in DuckDuckGo. Those are the only two I use regularly enough to know the operators for; I am happy to add more search engines - email me with details of the search engine and how to enable verbatim mode.",
+	"version": "0.2",
 
-	"background": {"scripts":["background.js"]},
+	"background": {
+		"scripts":["google-search-pages.js", "background.js"]
+	},
+
+	"icons": { 
+		"16": "icons/sic-16.png",
+		"19": "icons/sic-19.png",
+        "48": "icons/sic-48.png",
+        "128": "icons/sic-128.png" 
+    },
 
 	"permissions": ["webRequest", "tabs", "webRequestBlocking", "<all_urls>"],
 	"browser_action": {
-		"default_icon": "icons/icon.png",
-		"default_title": "Toggle search verbatim (sic)"
+		"default_icon": "icons/sic-19.png",
+		"default_title": "Toggle verbatim search (sic)"
 	}
 }

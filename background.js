@@ -2,7 +2,7 @@ enabled = true;
 
 /** GOOGLE **/
 chrome.webRequest.onBeforeRequest.addListener(function(details) {
-		if ((details.url.indexOf("&tbs=li:1") == -1) && enabled) {
+		if (enabled && (details.url.indexOf("&tbs=li:1") == -1)) {
 			var url = details.url + "&tbs=li:1";
 			chrome.browserAction.setBadgeText({text: "OK"});
 
@@ -12,9 +12,8 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
 		}
 	}, {
 		urls: [
-			"*://www.google.com/search?*",
-			"*://google.com/search?*",
-			"*://encrypted.google.com/search?*",
+			"http://*/search?*",
+			"https://*/search?*"
 		],
 		types: ["main_frame"]
 	}, 
@@ -50,9 +49,11 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
 chrome.browserAction.onClicked.addListener(function() {
 	if (enabled) {
 		enabled = false;
-		alert("Verbatim search (sic) disabled");
+		chrome.browserAction.setIcon({path:"icons/sic-disabled.png"});
+		chrome.browserAction.setTitle({ "title": "Enable Search Verbatim (sic)"});
 	} else {
 		enabled = true;
-		alert("Verbatim search (sic) enabled");
+		chrome.browserAction.setIcon({path:"icons/sic-19.png"});
+		chrome.browserAction.setTitle({ "title": "Disable Search Verbatim (sic)"});
 	}
 });
