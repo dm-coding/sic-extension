@@ -9,6 +9,17 @@ Google and DDG are the only two search engines I use regularly enough to know th
 # Browser Support
 The extension was designed in Opera and works in both Chrome and Opera desktop editions.
 
+# Installation
+For most users, it is sufficient to drag the relevent packed browser extension into the browser extensions management page. The packed extensions live in the "extensions" directory in this repository. For Opera, use sic.nex. For Chrome, use sic.crx.
+
+# Privacy Information
+Contrary to the information given in the extensions information panel, the extension does not actually request privildges for all URLs. Instead, it operates on the following pages:
+	* "http://*/search?*"
+	* "https://*/search?*"
+	* "*://www.duckduckgo.com/?q=*"
+	* "*://duckduckgo.com/?q=*"
+At no point will the extension ever communicate in any way with any process outside of Google and DDG.
+
 # Documentation and Further Information
 https://github.com/stormsaber/sic-extension
 
