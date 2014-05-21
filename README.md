@@ -7,7 +7,7 @@ Search Verbatim (sic) is a browser extension which forces Google to use Verbatim
 # Browser Support
 The extension was designed in Opera and works in both Chrome and Opera desktop editions.
 
-# Documentation and Furthur Information
+# Documentation and Further Information
 https://github.com/stormsaber/sic-extension
 
 # Licence
